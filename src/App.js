@@ -177,7 +177,7 @@ function Hero() {
   return (
     <section 
       id="what-we-are"
-      className="flex flex-col md:flex-row items-center justify-center min-h-screen px-4 md:px-20 py-10 pt-16 gap-10 scroll-mt-16"
+      className="flex flex-col md:flex-row items-center justify-center min-h-screen px-4 md:px-20 py-10 pt-10 md:pt-16 gap-10 scroll-mt-16"
     >
       <div className="md:w-1/2 text-center md:text-left">
         <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">What We Are</h2>
@@ -207,6 +207,7 @@ function Hero() {
     </section>
   );
 }
+
 
 
 function HowItWorks() {
