@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef,useCallback } from "react";
 import { Card, CardBody, Button } from "@nextui-org/react";
 import { Mail, Phone, ArrowDown} from "lucide-react";
 import AnimatedText from './components/AnimatedText';
@@ -6,13 +6,16 @@ export default function App() {
   const [section, setSection] = useState(0);
   const isScrolling = useRef(false); // Persist isScrolling between renders
 
-  const nextSection = () => {
-    if (section < 3) setSection((prev) => prev + 1);
-  };
+  const nextSection = useCallback(() => {
+    setSection((prev) => (prev < 3 ? prev + 1 : prev));
+  }, []);
+  
+  const prevSection = useCallback(() => {
+    setSection((prev) => Math.max(prev - 1, 0));
+  }, []);
 
   const backToTop = () => setSection(0);
-  const prevSection = () => setSection((prev) => Math.max(prev - 1, 0));
-
+ 
   const sections = [
     <Hero key="hero" setSection={setSection} section={section} nextSection={nextSection} />,
     <HowItWorks key="how" setSection={setSection} section={section} nextSection={nextSection} />,
