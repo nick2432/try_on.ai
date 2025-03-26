@@ -72,7 +72,7 @@ export default function App() {
       window.removeEventListener("touchstart", handleTouchStart);
       window.removeEventListener("touchend", handleTouchEnd);
     };
-  }, [section]); // Keeping section as a dependency if needed
+  }, [nextSection, prevSection]); // Keeping section as a dependency if needed
   
   return (
     <div className="flex flex-col min-h-screen bg-gray-100 overflow-hidden">
