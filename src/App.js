@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Card, CardBody, Button } from "@nextui-org/react";
-import { Mail, Phone, ArrowDown, Check } from "lucide-react";
+import { Mail, Phone, ArrowDown} from "lucide-react";
 import AnimatedText from './components/AnimatedText';
 export default function App() {
   const [section, setSection] = useState(0);
