@@ -177,7 +177,7 @@ function Hero() {
   return (
     <section 
       id="what-we-are"
-      className="flex flex-col md:flex-row items-center justify-center min-h-screen px-4 md:px-20 py-10 pt-24 gap-10 scroll-mt-24"
+      className="flex flex-col md:flex-row items-center justify-center min-h-screen px-4 md:px-20 py-10 pt-16 gap-10 scroll-mt-16"
     >
       <div className="md:w-1/2 text-center md:text-left">
         <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">What We Are</h2>
@@ -186,11 +186,11 @@ function Hero() {
           We are building an AI-powered social platform where users can discover, try, and experience products virtually. Our AI recommends the best products based on user needs, enabling virtual try-ons, content creation, and direct purchase from brand links.
 
           Our experienced team — with backgrounds in 
-          <a href="https://www.linkedin.com/in/aman-kumar-30a083172/" target="_blank" className="text-blue-600 hover:underline"> Amazon</a>, 
-          <a href="https://www.linkedin.com/in/akhil-anand-0a8283186/" target="_blank" className="text-blue-600 hover:underline">Observe.AI</a>, 
+          <a href="https://www.linkedin.com/in/aman-kumar-30a083172/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline"> Amazon</a>, 
+          <a href="https://www.linkedin.com/in/akhil-anand-0a8283186/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline"> Observe.AI</a>, 
           Microsoft, 
-          <a href="https://www.linkedin.com/in/rampagee/" target="_blank" className="text-blue-600 hover:underline"> PayPal</a>, and 
-          <a href="https://www.linkedin.com/in/nikhil-anand-a9402b1b8/" target="_blank" className="text-blue-600 hover:underline"> FealtyX</a> — is passionate about combining AI and social experiences to help brands connect with real users in an interactive way.
+          <a href="https://www.linkedin.com/in/rampagee/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline"> PayPal</a>, and 
+          <a href="https://www.linkedin.com/in/nikhil-anand-a9402b1b8/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline"> FealtyX</a> — is passionate about combining AI and social experiences to help brands connect with real users in an interactive way.
 
           We’re not just a try-on tool — we’re creating a virtual space where brands gain visibility, users express their style, and everyone connects through creativity.
         </p>
@@ -207,6 +207,7 @@ function Hero() {
     </section>
   );
 }
+
 
 function HowItWorks() {
   return (
